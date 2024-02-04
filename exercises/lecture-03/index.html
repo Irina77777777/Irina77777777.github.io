@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 3 challenges</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/demo.css">
     <style>
         p{
             color: red;
         }
+    </style>
+    <!-- for task 4 -->
+    <!-- Додайте тут елеиент style: -->
+    <style type="text/css">
+        body {
+            background: var(--bgColor);
+        }
+    
+        div {
+            --bgColor: limegreen;
+        }
+           p {
+             background: var(--bgColor);
+           }
+        /*
+            визначте для елементів p властивість фону таким чином:
+            background: var(--bgColor);
+            */
     </style>
 </head>
 <body>
@@ -49,6 +68,84 @@
 
     <section>
         <!--  task 4  -->
+        <!-- Додайте тут 2 елеиенти div: -->
+        <div>
+            <h3>Div 1</h3>
+            <p>Paragraph 1</p>
+        </div>
+        
+        <div>
+            <h3>Div 2</h3>
+            <p>Paragraph 2</p>
+        </div>
+    </section>
+        <!--  task 6 -->
+        * {
+        margin: 0;
+        padding: 0;
+        }
+        
+        /* more styles */
+        @import url("my-imported-styles.css");
+        <pre>
+            mentor help1 - Roman
+            помилки у 6 пункті - неправильний порядок рядків. спочатку мають йти імпорти.
+            також помилкою є те, що там назва файлу, що імпортується, не співпадає з тим, що створюєте ви у завданні
+        </pre>
+    <section>
+
+        <!--  task 9 -->
+        <footer style="background-color: rgb(193, 176, 176);">
+            <!-- створити тут секцію -->
+            <section>
+            <!-- створити тут div -->
+            <div>
+            <h2>About</h2>
+            <!-- створити тут невпорядкований список з такмсм елементами -->
+               <ul>
+        	  	<li> <a href="#">Services</a> </li>
+                <li> <a href="#">Portfolio</a> </li>
+                <li> <a href="#">Pricing</a> </li>
+                <li> <a href="#">Customers</a> </li>
+                <li> <a href="#">Careers</a> </li>
+            </ul>
+            </div>
+            <!-- створити тут div -->
+            <div>
+            <h2>Resources</h2>
+            <!--  створити тут невпорядкований список з такмсм елементами -->
+              <ul>
+        	  	<li><a href="#">Docs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">eBooks</a></li>
+                <li><a href="#">Webinars</a></li>
+            </ul>
+            </div>
+        
+            <!-- створити тут div -->
+            <div>
+            <h2>Contact</h2>
+            <!-- створити тут невпорядкований список з такмсм елементами  -->
+              <ul>
+        	  	<li><a href="#">Help</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Advertise</a></li>
+            </ul>
+            </div>
+        
+            <!-- Footer legal -->
+            <!-- створити тут section -->
+              <section>
+            <!-- створити тут невпорядкований список з такмсм елементами  -->
+              <ul>
+        	  	<li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li>&copy; 2024 Copyright Shopaholic Inc.</li>
+                </ul>
+              </section>
+            </section>
+        </footer>
+
     </section>
 </body>
 </html>
