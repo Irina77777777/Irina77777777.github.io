@@ -1,0 +1,76 @@
+/* main.css lecture-04  */
+
+/* home work task2   Відредагуйте файл css/main.css  */
+
+h1, h2, h3 {
+    color: gray;
+}
+
+#main {
+    color: #e60202;
+}
+
+.h2 {
+    color: red;
+}
+
+.heading {
+    color: green;
+}
+
+/*  home work part 3  */
+ul {
+    font-weight: bold;
+}
+ section>p {
+     color: red;
+ }
+ section p {
+    font-size: x-large;
+ }
+
+ /*  home work part 4  */
+ section h2:first-of-type {
+    color: indigo;
+ }
+ p.first a {
+    color: green;
+ }
+ p .first a[color="green"] {
+    font-size: 20px;
+ }
+ div > p {
+    color: salmon;
+ }
+
+  /*  home work part 5  
+  Маємо іменовані кольори black,
+  blue,
+  green,
+  red,
+  white,
+  yellow визначати ці кольори за допомогою шістнадцяткового коду: 0,
+  1,
+  ...
+  F. визначати ці кольори у десятковій системі числення за допомогою функції RGB. визначати ці кольори,
+  використовуючи відсотки. визначати ці кольори використовуючи альфа-канал,
+  що задає прозорість.  
+  black - #000000, rgb (000, 000, 000), hls(0, 100%, 0%), rgb(0 0 0 /1)
+  blue - #0000FF, rgb(000, 000, 255), hls(240, 100%, 50%), rgba(0 0 255 /1)
+  green - #00FF00, rgb(000, 255, 000), hls(120, 100%, 50%), rgb(0 255 0 /1)  
+  red - #FF0000, rgb(255, 000, 000), hls(360, 100%, 50%), rgb(255 0 0 /1)
+  white - #FFFFFF, rgb(255, 255, 255), hls(0, 0%, 100%), rgb(255 255 255 /1)
+  yellow  - #FFFF00, rgb(255, 255, 000), hls(60, 100% 50%), rgb(255 255 0 /1) */
+
+ /*  home work part 6   */
+  .translucent-box {
+    background-color: hls(0, 100%, 50%);
+  }
+
+   /*  home work part 7  */
+   body{
+     font-size: 0,4em;
+   }
+   h1{
+     font-size: 1,4em;
+   }
