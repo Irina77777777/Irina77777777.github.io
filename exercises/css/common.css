@@ -1,4 +1,4 @@
-/* common.css  */
+/* common.css  */  /*
 html{
   --primary-text-color: #000;
   --primary-bg-color: #fff;
@@ -7,4 +7,21 @@ html{
 footer {
     --footer-text-color: #fff;
     --fuuter-bg-color: #000;
-}
+}  */
+
+/* part 8 lesson-05 */
+      	html {
+      	    --primary-text-color: #000;
+      	    --primary-bg-color: #fff;
+
+              --primary-font-family: 'Roboto', sans-serif;
+              --primary-font-size: 0.875rem;
+      	}
+    
+      	footer {
+      	    --footer-text-color: #fff;
+      	    --fuuter-bg-color: #000;
+      	}
+        header a {
+          text-decoration: none;
+                }

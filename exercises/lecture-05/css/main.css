@@ -1,0 +1,22 @@
+/* main.css lesson-5 */
+body{
+    font-family: 'Nunito', sans-serif;
+        font-family: 'Roboto', sans-serif;
+}
+/* part 3 */
+div{
+    font-size: 1.6en;
+}
+span{
+    font-size: 2.56em;
+}
+/* part 4 */
+ div > strong{
+    font-size: 1.6em;
+}
+/* part 5 */
+.square {
+    background: #2ecc71;
+    width: 7rem;
+    aspect-ratio: 1/1;
+}
