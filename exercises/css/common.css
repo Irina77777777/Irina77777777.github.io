@@ -9,14 +9,22 @@ footer {
     --fuuter-bg-color: #000;
 }  */
 
-/* part 8 lesson-05 */
+/* part 8 lesson-05 
       	html {
       	    --primary-text-color: #000;
       	    --primary-bg-color: #fff;
 
               --primary-font-family: 'Roboto', sans-serif;
               --primary-font-size: 0.875rem;
-      	}
+      	}  */
+        
+        /* task 12 lesson-6  */
+            :root {
+                    	    --primary-text-color: #000;
+                    	    --primary-bg-color: #fff;
+                    	    --primary-font-family: 'Roboto', sans-serif;
+                    	    --primary-font-size: 0.875rem;
+            	}
     
       	footer {
       	    --footer-text-color: #fff;
