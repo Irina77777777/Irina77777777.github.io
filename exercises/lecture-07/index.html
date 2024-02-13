@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-7</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <style>
+       .negative{
+         background: -webkit-gradient(linear,  right top, left top,
+       from(rgb(0, 251, 255)), color-stop(-50%, rgb(0, 139, 225)),
+       color-stop(-10%, rgb(5, 75, 205)), color-stop(0%, rgb(0, 26, 155)), 
+       color-stop(100%, rgb(118, 128, 218)), to(#14012bf1));
+        }
+        .percents {
+            background: linear-gradient( /* to bottom - potribno, but the best */
+                       to left, rgb(171, 242, 57) 2em,
+          rgb(128, 242, 57) 4em, rgb(6, 162, 79) 8em, rgb(66, 242, 57) 16em,
+           rgb(57, 242, 113) 32em,  rgb(5, 158, 51) 64em, rgb(0, 64, 9) 128em );
+                 }
+        .radial{
+           /* background: -webkit-gradient( linear, left top, right top, from(rgb(25, 76, 192)), color-stop(20%,
+rgb(196, 26, 3)), color-stop(40%, rgb(236, 190, 6)), color-stop(60%, rgb(25, 76, 192)),
+color-stop(80%, rgb(3, 116, 8)), to(rgb(196, 26, 3))); */
+ background: radial-gradient(ellipse at top, orange, transparent),
+ radial-gradient(ellipse at bottom, red, transparent);
+
+        }
+
+
+    </style>
+
+</head>
+
+<body class="body">
+
+    <h1>Gradient Text Glow</h1>
+
+    <div class="percents">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius
+        ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <div class="negative">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius
+        ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <div class="radial">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius
+        ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+    <!--  task 2  -->
+    <div class="task-2">
+        <h4>task-2</h4>
+    <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="20"  rx="20" ry="20" width="100" height="100" stroke="#1c87c9" stroke-width="4" fill="lightgray" />
+    </svg>
+    <h4>task-3</h4>
+    <svg version="1.1" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="-2" y="-35" width="200" height="200"  fill="lightgray" fill-opacity="0,3" />
+        <circle cx="100" cy="70" r="60" fill="lightgray" stroke="red" stroke-width="4" />
+    </svg>
+    <h4>task-4</h4>
+    <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+        <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
+        <rect x="-2" y="-35" width="200" height="200" fill="lightgray" fill-opacity="0,3" />
+        <circle cx="100" cy="70" r="60" fill="lightgray" stroke="black" stroke-width="4" />
+       
+        <path d="M 100 15  V 70  H 130" fill="transparent" stroke="blue" stroke-width="3" />
+    </svg>
+
+    <h4>task-5</h4>
+    <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="black" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+    </svg>
+</div>
+</body>
+
+</html>
