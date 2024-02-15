@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-08</title>
+    <style>  
+      /* task 1  */
+        .box {
+            padding: 10px 20px 25px;
+            margin: 25px 20px;
+        } 
+         /* task 2  */
+        .box { 
+  width: 300px; 
+  padding: 10px; 
+  border: dashed 2px green;
+}  
+  /*  task 3  */
+.first-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow; 
+}  
+/* task 4  */
+.second-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  background: yellow;
+}
+/* task 7  */
+ div {
+    border: 10px dotted black;
+    padding: 15px;
+    background: lightblue;
+  }
+  #example1 {
+    background-clip: border-box;
+  }
+  #example2 {
+    background-clip: padding-box;
+  }
+  #example3 {
+    background-clip: content-box;
+  }
+  /* task 8  */
+   h1  {
+       display: inline-block;
+       width: min-content;
+   }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <!-- task 2  -->
+    <!-- ширинa елемента .box =  
+        padding + border + width + border + padding  
+        10 + 2 + 300 + 2 + 10 = 324px-->
+
+    <!-- task 3  -->
+    <section>
+        <div class="first-box"></div>
+    <!-- ширинa елемента .first-box
+     = 20 + 8 +200 + 8 +20 = 256px
+          і висотa елемента .first-box
+    = 20 + 8 + 100 + 8 + 20 = 156px    -->    
+    </section>
+
+    <!-- task 4  -->
+    <section>
+        <div class="second-box"></div>
+    </section>
+    <!--  ширинa елемента .second-box 
+    = 8 + 200 + 8 = 216px  
+    і висотa елемента .second-box = 8 + 100 + 8 = 116px-->
+
+    <!--  task 5   
+    div{
+    box-sizing:content-box;
+    width: 200px;
+    border: 8px solid blue;
+    padding: 20px;
+    background: yellow;
+    }
+ширинa елемента div   for  content-box   = 200px
+-->
+
+  <!--  task 6
+div{
+  box-sizing:border-box;
+  width: 200px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+ширинa елемента div  for border-box = 20 + 8 + 200 + 8 + 20 = 256px -->
+
+<!-- task 7  -->
+<section>
+    <div id="example1">
+        <p>Правило для example1: фон всередині елемента має простягатися за межі рамки.</p>
+    </div>
+    
+    <div id="example2">
+        <p>Правило для example2: фон всередині елемента має простягатися до внутрішнього краю рамки.</p>
+    </div>
+    
+    <div id="example3">
+        <p>Правило для example3: фон всередині елемента має простягатися до краю поля вмісту.</p>
+    </div>
+</section>
+
+<!--  task 8  -->
+<h1><span>Awesome article</span></h1>
+
+</body>
+
+</html>
