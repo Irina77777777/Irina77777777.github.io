@@ -1,0 +1,22 @@
+body {
+    --padding: 5vw;
+    --max-width: 180ch;
+}
+
+.flexbox {
+    --min: 30ch;
+
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+
+flex-direction: row;
+    justify-content: space-around;
+
+    gap: 1rem;
+}
+
+.card {
+  width: var(--min);
+  background-color: aquamarine;
+}

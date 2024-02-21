@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson-10</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <style>
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 700px;
+         /* task 1
+            align-items: stretch;
+          justify-content: space-between;  */  
+        }
+
+       /* .item-blue {
+            background-color: blue;
+              flex: 3 1 auto;
+        }
+        .item-orange {
+            background-color: orange;
+        }
+        .item-green {
+            background-color: green;
+             flex: 1 1 auto;
+        }  */
+                .item-blue {
+            background-color: blue;
+            flex-grow: 3;
+        }
+        .item-orange {
+            background-color:orange;  
+        }
+        .item-green {
+            background-color:green;
+            flex-grow: 1;
+        }
+
+        .item {
+            color: white;
+            width: 100px;
+          /*   flex: 2 1 auto;    task 1*/
+        }
+
+        header{
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>CSS Flex Property</h2>
+    <div class="wrapper">
+        <div class="item item-blue">CSS</div>
+        <div class="item item-orange">Flex</div>
+        <div class="item item-green">Property</div>
+    </div>
+    <div>
+        - розподілити простір між елементами flex так, щоб вони мали однакову ширину та заповнювали весь доступний простір.
+        Закоментуйте цей рядок.
+        
+        - Встановіть для елемента blue фактор зростання 3
+        - Встановіть для елемента green фактор зростання 1
+        - Розрахуйте в пікселях ширину кожного з елементів item-green, item-orange, item-blue
+        <p>item-green  700 / 6 * 2 = 233px;</p>
+        <p> item-orange  700 / 6 = 117px;</p>
+        <p> item-blue 700 /6 * 3 = 350px;</p>
+    </div>
+
+    <header class="page-header mb-3">
+        <!-- brand -->
+        <a href="/index.html" class="brand">Shopaholic</a>
+        <!-- navigation -->
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/catalog.html">Catalog</a>
+            <a href="./blog.html">Blog</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+    
+        <nav class="toolbar">
+            <a href="#" class="far fa-heart"></a>
+            <a href="/cart.html" class="fas fa-dolly-flatbed"></a>
+            <a href="#" class="far fa-user"></a>
+        </nav>
+    </header>
+
+    
+
+</body>
+
+</html>
