@@ -109,10 +109,10 @@ console.log(sentence14.slice(6, sentence14.length));
 console.log(sentence14.slice(0, 6));// Always
 console.log(sentence14.slice(7, 11));  // look
 
-// task 15
-const nameP = /^\([0-9][a-z]-_){8,16}$;
+// task 15 
+/*const nameP = /^\([0-9][a-z]-_){8,16}$;
 // task 16
-const mailPatt = /^\ (([0-9][a-z]){0,}+\ @\+ ([a-z]{0,})+\.\+([a-z]))$; 
+const mailPatt = /^\ (([0-9][a-z]){0,}+\ @\+ ([a-z]{0,})+\.\+([a-z]))$; */
 
 // task 17
 let sentence17 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien eu velit eleifend ullamcorper eget vitae nulla. Aenean euismod purus sed neque dictum, nec lobortis ante faucibus.';
