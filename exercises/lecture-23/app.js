@@ -47,20 +47,27 @@ document.getElementsByClassName(".btn-dark  .btn-light") = function () {
 
 // task - 6
 document.getElementsByClassName(".btn-info").keypress = function () {
-    //  event.preventDefault()
-    alert.classList.add(" alert-info");
-    alert.textContent = "A simple info alert—check it out!";
-};
-document.getElementsByClassName(".btn-info").focusout = function () {
-    alert.classList.remove(" alert-danger");
-    alert.textContent = "  ";
-};
+    btnInfo.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            alert.classList.add('alert-info');
+            alert.textContent = "A simple info alert—check it out!";
+        }
+    });
+}
+
 
 // task - 7
 //Знайти на сторінці всі селектори.card.
 //Використовуючи цмкл for, вивести на консоль вміст кожного елемента з
 //класом.card - title
+let cards = document.querySelectorAll('.card');
 
+for (let i = 0; i < cards.length; i++) {
+let title = cards[i].querySelector('.card-title').textContent;
+console.log(cards[i]);
+console.log(title);
+}
 
 // task - 8
 const allCard= document.querySelectorAll("card");
