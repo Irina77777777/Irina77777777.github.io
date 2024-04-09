@@ -62,6 +62,18 @@ const arr =
 const res = arr.reduce((current) => (res.push(current)));
 console.log(res);
 
+// Підказка та пояснення ментора
+// sum() - це функція, яка описує операцію додавання.   
+//Трохи модифікуємо ваш код:
+function sum(numbers) {
+let total = 0;
+for (const number of numbers) {
+total += number;
+}
+console.log(total); // Перемістився ззовні циклу, щоб він виводив результат після завершення обчислень.
+return total; // Перемістився зі стрічки перед console.log(), бо код після return не виконується.
+}
+
 // task - 5
 function myFunc() {
     let arr = ["Algorithm", "Data Structure", "Operating System", "html"];
