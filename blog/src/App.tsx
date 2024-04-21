@@ -4,7 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Footer from  './components/Footer'
 import Navbar from "./components/Navbar"
-import Gallery  from './components/Gallery'
+import Gallery from './components/Gallery'
+import Blog from './components/Blog'
 
 
 
@@ -65,7 +66,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
         
-      <Footer  />
+      <Footer />
+      <Blog />
     </>
   )
 }
