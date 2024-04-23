@@ -69,6 +69,8 @@ console.log(cards[i]);
 console.log(title);
 }
 
+
+
 // task - 8
 const allCard= document.querySelectorAll("card");
 for (i = 0; i < allCard.length; i++) {

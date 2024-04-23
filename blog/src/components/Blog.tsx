@@ -27,7 +27,7 @@ import  { useState } from 'react';
         const data =  await (
             await fetch('https://jsonplaceholder.typicode.com/posts')
         ).json();
-        setPosts([...posts, data]);
+     //   setPosts([...posts, data]);
     }
 
    //   render() {
