@@ -1,21 +1,54 @@
-import { useState, useEffect } from "react";
+
+import { useState, useEffect, useContext, createContext } from 'react';
+import Layout from './Layout';
+import Header from './Header';
+import PostMain from './PostMain';
+import PostTitle from './PostTitle';
 
 
-function Post({}) {
+function Post() {
     const [post, setPost] = useState([]);
 
+    const PostContext = createContext("");
 
-   const [likes, setLikes] = useState(0);
-   function likeThis() {
-       return setLikes(likes + 1);
-   }
-useEffect(
-    () => document.getElementById("like").addEventListener("Click", likeThis) ,
-    [likes]
-);
+    const Layout = ({  }) => {
+        return (
+            <div>
+                <Header />
+                <main>{"children"}</main>
+            </div>
+        );
+    };
+
+    const Header = () => {
+        return (
+            <header>
+                <InfoContext />
+            </header>
+        );
+    };
+
+ 
+   const InfoContext = () => {
+       const blogHeader = useContext(PostContext);
+       return (
+           <>
+               <h2>{blogHeader.blogName}</h2>
+               <p>{blogHeader.blogDescription}</p>
+           </>
+       );
+   };
+       const  blogHeader = {
+           blogName: "Our blog",
+           blogDescription:
+               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi culpa odio asperiores a tempore.",
+       };
+  
+
+
 
     const fetchData = async () => {
-        const data = await(
+        const data = await (
             await fetch(
                 "https://my-json-server.typicode.com/https://github.com/Irina77777777//db/posts/1"
             )
@@ -28,23 +61,10 @@ useEffect(
     }, []);
 
     return (
-        <>
-            <article className="post">
-                <div className="cover-container">
-                    <img src={post.cover} alt={post.title} />
-                </div>
-                <div className="post-footer">
-                    <h3>
-                        {post.title} {post.id}
-                    </h3>
-                    <p>{post.content}</p>
-                    <button id="like">
-                        Like this post <strong>{likes}</strong>
-                    </button>
-                </div>
-            </article>
-        </>
+        <PostContext.Provider value={post}>
+            <Layout>
+            </Layout>
+        </PostContext.Provider>
     );
 }
-
 export default Post;
