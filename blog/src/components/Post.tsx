@@ -30,11 +30,11 @@ function Post() {
 
  
    const InfoContext = () => {
-       const blogHeader = useContext(PostContext);
+      // const blogHeader = useContext(PostContext);
        return (
            <>
-               <h2>{blogHeader.blogName}</h2>
-               <p>{blogHeader.blogDescription}</p>
+               <h2>blogHeader.blogName</h2>
+               <p>blogHeader.blogDescription</p>
            </>
        );
    };
@@ -61,10 +61,10 @@ function Post() {
     }, []);
 
     return (
-        <PostContext.Provider value={post}>
+       // <PostContext.Provider  value={post}>
             <Layout>
             </Layout>
-        </PostContext.Provider>
+       // </PostContext.Provider>
     );
 }
 export default Post;
