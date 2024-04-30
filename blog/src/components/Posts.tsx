@@ -1,12 +1,12 @@
 
-import { useState, useEffect, useContext, createContext } from 'react';
+import { useState, useEffect, useContext,   createContext } from 'react';
 import Layout from './Layout';
 import Header from './Header';
 import PostMain from './PostMain';
 import PostTitle from './PostTitle';
 
 
-function Post() {
+function Posts() {
     const [post, setPost] = useState([]);
 
     const PostContext = createContext("");
@@ -30,7 +30,7 @@ function Post() {
 
  
    const InfoContext = () => {
-      // const blogHeader = useContext(PostContext);
+       const blogHeader = useContext(PostContext);
        return (
            <>
                <h2>blogHeader.blogName</h2>
@@ -61,10 +61,10 @@ function Post() {
     }, []);
 
     return (
-       // <PostContext.Provider  value={post}>
+       // <PostContext.Provider  >
             <Layout>
             </Layout>
-       // </PostContext.Provider>
+      //  </PostContext.Provider>
     );
 }
-export default Post;
+export default Posts;
